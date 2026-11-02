@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://balaji-palani-portfolio.vercel.app"),
   title: "Balaji Palani | Senior Scrum Master & Technical Agile Delivery Lead",
   description:
     "Certified Senior Scrum Master (CSM®, SAFe® 6 SSM) with 7+ years of IT experience combining 4+ years of dedicated Agile delivery leadership with a strong technical foundation in software engineering. Immediate Joiner (0 Days Notice).",
@@ -29,6 +30,8 @@ export const metadata: Metadata = {
     title: "Balaji Palani | Senior Scrum Master & Technical Agile Delivery Lead",
     description:
       "Certified Senior Scrum Master (CSM®, SAFe® 6 SSM) with 7+ years of IT experience across BFSI, FinTech, and Telecom. Immediate Joiner (0 Days Notice).",
+    url: "https://balaji-palani-portfolio.vercel.app",
+    siteName: "Balaji Palani Portfolio",
     type: "website",
     locale: "en_US",
   },
