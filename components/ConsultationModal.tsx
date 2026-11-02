@@ -10,6 +10,7 @@ interface ConsultationModalProps {
 
 export default function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,9 +22,21 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+      setSubmitted(true);
+    }
   };
 
   const handleReset = () => {
@@ -176,9 +189,10 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-label uppercase tracking-wider font-semibold shadow hover:opacity-95 transition-opacity"
+                  disabled={loading}
+                  className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-label uppercase tracking-wider font-semibold shadow hover:opacity-95 transition-opacity disabled:opacity-50"
                 >
-                  Send Inquiry
+                  {loading ? "Transmitting..." : "Send Inquiry"}
                 </button>
               </div>
             </form>

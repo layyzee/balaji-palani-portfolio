@@ -6,7 +6,38 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Balaji Palani | Senior Scrum Master & Technical Agile Delivery Lead",
   description:
-    "Professional Agile Dossier & Portfolio of Balaji Palani (CSM®, SAFe® 6 SSM). 7+ years of IT experience combining 4+ years of dedicated Agile delivery leadership with a strong technical foundation in software engineering.",
+    "Certified Senior Scrum Master (CSM®, SAFe® 6 SSM) with 7+ years of IT experience combining 4+ years of dedicated Agile delivery leadership with a strong technical foundation in software engineering. Immediate Joiner (0 Days Notice).",
+  keywords: [
+    "Balaji Palani",
+    "Senior Scrum Master",
+    "Technical Agile Delivery Lead",
+    "CSM",
+    "SAFe 6 SSM",
+    "Agile Coach",
+    "Scrum of Scrums",
+    "Jira JQL",
+    "Power BI",
+    "React.js",
+    "AWS",
+    "BFSI",
+    "FinTech",
+    "Telecom",
+    "Immediate Joiner",
+  ],
+  authors: [{ name: "Balaji Palani", url: "https://linkedin.com/in/balajipalani92" }],
+  openGraph: {
+    title: "Balaji Palani | Senior Scrum Master & Technical Agile Delivery Lead",
+    description:
+      "Certified Senior Scrum Master (CSM®, SAFe® 6 SSM) with 7+ years of IT experience across BFSI, FinTech, and Telecom. Immediate Joiner (0 Days Notice).",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Balaji Palani | Senior Scrum Master",
+    description:
+      "Certified Senior Scrum Master (CSM®, SAFe® 6 SSM) with 7+ years of IT experience. Immediate Joiner (0 Days Notice).",
+  },
 };
 
 export default function RootLayout({

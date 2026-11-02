@@ -62,6 +62,15 @@ export default function CvModal({ isOpen, onClose }: CvModalProps) {
               <Printer className="w-5 h-5" />
             </button>
             <a
+              href="/balaji-palani-cv.pdf"
+              download="Balaji_Palani_Senior_Scrum_Master_CV.pdf"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-high text-primary hover:bg-surface-container text-xs font-label uppercase tracking-wider font-semibold transition-colors"
+              title="Download PDF Resume"
+            >
+              <Download className="w-4 h-4" />
+              Download PDF
+            </a>
+            <a
               href="mailto:balajinia@gmail.com?subject=Job%20Opportunity%20-%20Balaji%20Palani"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary text-xs font-label uppercase tracking-wider font-semibold shadow hover:opacity-95 transition-opacity"
             >
