@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Environment files & credentials
+.env
+.env*.local
+.env.development
+.env.production
+.stitch/credentials.json
+
+# Operating System files
+.DS_Store
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
